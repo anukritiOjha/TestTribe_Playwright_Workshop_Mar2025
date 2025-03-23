@@ -7,8 +7,8 @@ test('OrangeHRM Login Test', async ({ page }) => {
     await page.locator('[type="submit"]').click();
 
     //assertion
-    await expect(page.locator('.oxd-topbar-header-breadcrumb-module')).toBeVisible();
-    //await expect(page.locator('.oxd-topbar-header-breadcrumb-module')).toHaveText('Dashboard');
+    //await expect(page.locator('.oxd-topbar-header-breadcrumb-module')).toBeVisible();
+    await expect(page.locator('.oxd-topbar-header-breadcrumb-module')).toHaveText('Dashboard');
     await page.pause();
     await page.screenshot({ path: `screenshot.png` });
 
