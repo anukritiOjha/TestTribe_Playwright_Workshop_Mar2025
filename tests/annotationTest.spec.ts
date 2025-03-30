@@ -44,7 +44,7 @@ test('slow in WebKit', async ({ page, browserName }) => {
   });
 
 // Executes ONLY this test and ignores all others in the suite.
-test.only('Executes Only this test', async ({ page }) => {
-    console.log("Only Test got executed");
-    // Add code here - only this will run in the suite due to test.only()
-  });
+// test.only('Executes Only this test', async ({ page }) => {
+//     console.log("Only Test got executed");
+//     // Add code here - only this will run in the suite due to test.only()
+//   });
