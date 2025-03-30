@@ -1,0 +1,9 @@
+services:
+  playwright-test:
+    image: playwright
+    build: .
+    container_name: playwright_docker
+    ports:
+      - "8081:8081"
+    volumes:
+      - ./:/app
